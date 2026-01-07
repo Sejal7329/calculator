@@ -22,8 +22,8 @@ function calculate() {
 document.getElementById('equal').onclick = calculate;
 document.getElementById('clear').onclick = clearDisplay;
 document.getElementById('delete').onclick = deleteLast;
-document.getElementById('divide').onclick = () => appendNumber('/');
-document.getElementById('multiply').onclick = () => appendNumber('*'); 
+document.getElementById('divide').onclick = () => appendNumber('÷');
+document.getElementById('multiply').onclick = () => appendNumber('×'); 
 document.getElementById('decimal').onclick = () => appendNumber('.');
 document.getElementById('nine').onclick = () => appendNumber('9');
 document.getElementById('eight').onclick = () => appendNumber('8');
