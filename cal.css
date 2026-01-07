@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+.calculator{
+    background-image: url(Calbg.jpg);
+    background-size: cover;    
+    background-position: center; 
+    overflow: hidden;
+    border-radius: 50px ;
+   
+}
+
+#innerdiv{
+    
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.display {
+    width: 350px;
+    height: 60px;
+    overflow :hidden;
+    white-space: nowrap;
+    grid-column: span 4;
+    background-color:darkslategray;
+    border: 1px solid #dadada;
+    border-radius: 30px;
+    color: white;
+    font-size: 2em;
+    text-align: right;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #44676e;
+    border: 1px solid #dadada;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover{
+         background-color: #000000;
+        color: white;
+    }
+}
+
