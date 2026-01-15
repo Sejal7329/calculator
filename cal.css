@@ -30,11 +30,11 @@ body {
     overflow :hidden;
     white-space: nowrap;
     grid-column: span 4;
-    background-color:darkslategray;
+    background-color:rgb(116, 155, 198);
     border: 1px solid #dadada;
     border-radius: 30px;
     color: white;
-    font-size: 2em;
+    font-size: 2.57em;
     text-align: right;
     padding: 5px;
     box-sizing: border-box;
@@ -43,12 +43,13 @@ body {
 .btn {
     padding: 20px;
     font-size: 1.5em;
-    background-color: #44676e;
+    background-color: rgb(116, 155, 198);
     border: 1px solid #dadada;
     border-radius: 30px;
     cursor: pointer;
     &:hover{
          background-color: #000000;
+         transition:1s;
         color: white;
     }
 }
