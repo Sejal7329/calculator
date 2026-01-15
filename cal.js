@@ -14,11 +14,16 @@ function appendNumber(number) {
 
 function calculate() {
     try {
-        display.innerText = eval(display.innerText);
+        let expression = display.innerText
+            .replace(/÷/g, '/')
+            .replace(/×/g, '*');
+
+        display.innerText = eval(expression);
     } catch {
         display.innerText = 'Error';
     }
 }
+
 document.getElementById('equal').onclick = calculate;
 document.getElementById('clear').onclick = clearDisplay;
 document.getElementById('delete').onclick = deleteLast;
